@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="View1" id="BYZ-38-t0r" customClass="ViewController" customModule="Study_timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-YQ-3gy">
+                                <rect key="frame" x="172.5" y="74" width="69" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학번" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5a-vG-tv6">
+                                <rect key="frame" x="192" y="224" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mml-Ll-jnW">
+                                <rect key="frame" x="50" y="255" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hru-c6-7Nf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDK-7j-otp">
+                                <rect key="frame" x="192" y="335" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lFO-d0-FMn">
+                                <rect key="frame" x="20" y="366" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CFB-Ho-mNi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yY-uc-HCr">
+                                <rect key="frame" x="132" y="562" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j3t-Qx-3Wt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="lvu-ij-Xp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Click">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1v-D7-8gJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7yY-uc-HCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0jm-bK-74m"/>
+                            <constraint firstItem="Mml-Ll-jnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1az-w8-LV5"/>
+                            <constraint firstItem="DK1-YQ-3gy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="GaP-br-ON3"/>
+                            <constraint firstItem="DK1-YQ-3gy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K5w-uY-W1e"/>
+                            <constraint firstItem="lFO-d0-FMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PUk-x2-ilz"/>
+                            <constraint firstItem="Y5a-vG-tv6" firstAttribute="top" secondItem="DK1-YQ-3gy" secondAttribute="bottom" constant="120" id="QTo-A5-gwK"/>
+                            <constraint firstItem="lFO-d0-FMn" firstAttribute="top" secondItem="eDK-7j-otp" secondAttribute="bottom" constant="10" id="Rck-OA-0Zq"/>
+                            <constraint firstItem="eDK-7j-otp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RnN-CT-b7A"/>
+                            <constraint firstItem="Mml-Ll-jnW" firstAttribute="top" secondItem="Y5a-vG-tv6" secondAttribute="bottom" constant="10" id="Uka-YI-trD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7yY-uc-HCr" secondAttribute="bottom" constant="250" id="VL1-H8-tyi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mml-Ll-jnW" secondAttribute="trailing" constant="50" id="ZcI-Rf-w7g"/>
+                            <constraint firstItem="eDK-7j-otp" firstAttribute="top" secondItem="Mml-Ll-jnW" secondAttribute="bottom" constant="40" id="f3V-wT-C3h"/>
+                            <constraint firstItem="Y5a-vG-tv6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gov-QY-8OS"/>
+                            <constraint firstItem="Mml-Ll-jnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kee-WK-tr3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lFO-d0-FMn" secondAttribute="trailing" constant="20" id="lZm-QI-CBJ"/>
+                            <constraint firstItem="lFO-d0-FMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tap-Nr-Grz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label_hello" destination="DK1-YQ-3gy" id="fUG-vd-NzF"/>
+                        <outlet property="Text_name" destination="lFO-d0-FMn" id="Elb-HJ-Jnl"/>
+                        <outlet property="Text_num" destination="Mml-Ll-jnW" id="AAB-jY-J1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="142"/>
+        </scene>
+    </scenes>
+</document>
