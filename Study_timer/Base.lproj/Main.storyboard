@@ -38,11 +38,16 @@
                                                 <state key="normal" title="START">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="Button_START_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFW-N2-fQH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUt-cM-07l">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUt-cM-07l" customClass="RoundButton" customModule="Study_timer" customModuleProvider="target">
                                                 <rect key="frame" x="167" y="4" width="100" height="40"/>
                                                 <color key="backgroundColor" name="ButtonClick"/>
                                                 <constraints>
@@ -52,6 +57,11 @@
                                                 <state key="normal" title="STOP">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="Button_STOP_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W67-cz-YHQ"/>
                                                 </connections>
@@ -67,7 +77,7 @@
                                             <constraint firstAttribute="bottom" secondItem="FGO-Yc-IU4" secondAttribute="bottom" constant="4" id="zJH-Pp-78b"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-eM-c5f">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-eM-c5f" customClass="RoundButton" customModule="Study_timer" customModuleProvider="target">
                                         <rect key="frame" x="89.5" y="473" width="100" height="40"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -77,6 +87,11 @@
                                         <state key="normal" title="RE START">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="Button_RESTART_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7c-Te-LsV"/>
                                         </connections>
@@ -129,6 +144,7 @@
                                             <constraint firstAttribute="trailing" secondItem="mAb-j7-kLI" secondAttribute="trailing" constant="4" id="YmL-M2-9X2"/>
                                             <constraint firstItem="mAb-j7-kLI" firstAttribute="top" secondItem="bq9-7o-Uxn" secondAttribute="top" constant="4" id="d1i-9P-vMI"/>
                                             <constraint firstItem="beb-59-uEe" firstAttribute="leading" secondItem="bq9-7o-Uxn" secondAttribute="leading" constant="4" id="dyQ-3D-0Eu"/>
+                                            <constraint firstItem="qHi-VH-o00" firstAttribute="leading" secondItem="XHh-en-hc0" secondAttribute="trailing" constant="70" id="eDg-6f-6qI"/>
                                             <constraint firstItem="XHh-en-hc0" firstAttribute="top" secondItem="beb-59-uEe" secondAttribute="bottom" constant="8" id="ezz-hS-sHI"/>
                                             <constraint firstItem="beb-59-uEe" firstAttribute="top" secondItem="bq9-7o-Uxn" secondAttribute="top" constant="4" id="fI5-8q-0vC"/>
                                             <constraint firstAttribute="trailing" secondItem="qHi-VH-o00" secondAttribute="trailing" constant="4" id="gWd-bW-glR"/>
@@ -229,18 +245,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="107"/>
+            <point key="canvasLocation" x="774" y="115"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="ButtonClick">
-            <color red="0.27050275259067358" green="0.27050275259067358" blue="0.27050275259067358" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.27099999785423279" green="0.27099999785423279" blue="0.27099999785423279" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ButtonColor">
-            <color red="1" green="0.5009015308530691" blue="0.42258772981602721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.50099998712539673" blue="0.42300000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TimerColor">
-            <color red="1" green="0.33388617533142084" blue="0.29689604972345707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.33399999141693115" blue="0.29699999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
