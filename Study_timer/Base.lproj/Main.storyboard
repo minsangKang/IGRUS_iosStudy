@@ -225,7 +225,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3dh-Dd-10D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FNG-hh-oOe"/>
                             <constraint firstItem="3dh-Dd-10D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WSz-iW-LXk"/>
@@ -234,9 +234,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Kuf-k2-mfA"/>
                     <connections>
-                        <outlet property="Button_RESTART_Outlet" destination="UJh-eM-c5f" id="6Aa-Fl-hlb"/>
+                        <outlet property="Button_RESET_outlet" destination="zfs-Qi-5so" id="Rm3-H0-aga"/>
+                        <outlet property="Button_RESTART_Outlet" destination="UJh-eM-c5f" id="i0i-if-4zb"/>
                         <outlet property="Button_START_Outlet" destination="FGO-Yc-IU4" id="chc-fc-yxo"/>
                         <outlet property="Button_STOP_Outlet" destination="cUt-cM-07l" id="60I-Nf-F7w"/>
+                        <outlet property="Button_Time_SET" destination="NWf-ml-yBD" id="xiF-3P-I8K"/>
                         <outlet property="Label_AllTime" destination="XHh-en-hc0" id="wI2-Uc-S3K"/>
                         <outlet property="Label_Persent" destination="Pzq-qc-qI6" id="5gs-xX-rZA"/>
                         <outlet property="Label_SumTime" destination="qHi-VH-o00" id="JzN-ye-yrp"/>
@@ -249,6 +251,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.30199998617172241" green="0.54699999094009399" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ButtonClick">
             <color red="0.27099999785423279" green="0.27099999785423279" blue="0.27099999785423279" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
