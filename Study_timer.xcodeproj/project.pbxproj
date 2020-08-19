@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773E3F8824ECC65C008C365B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E3F8724ECC65C008C365B /* TestViewController.swift */; };
+		773E3F8A24ECCD2B008C365B /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E3F8924ECCD2B008C365B /* SetTimeViewController.swift */; };
 		779F69F224CD9A5F00933692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F69F124CD9A5F00933692 /* AppDelegate.swift */; };
 		779F69F424CD9A5F00933692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F69F324CD9A5F00933692 /* SceneDelegate.swift */; };
 		779F69F624CD9A5F00933692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F69F524CD9A5F00933692 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		773E3F8724ECC65C008C365B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		773E3F8924ECCD2B008C365B /* SetTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		779F69EE24CD9A5F00933692 /* Study_timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F69F124CD9A5F00933692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F69F324CD9A5F00933692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				779F69F324CD9A5F00933692 /* SceneDelegate.swift */,
 				779F69F524CD9A5F00933692 /* ViewController.swift */,
 				779F69F724CD9A5F00933692 /* Main.storyboard */,
+				773E3F8924ECCD2B008C365B /* SetTimeViewController.swift */,
+				773E3F8724ECC65C008C365B /* TestViewController.swift */,
 				779F69FA24CD9A6000933692 /* Assets.xcassets */,
 				779F69FC24CD9A6000933692 /* LaunchScreen.storyboard */,
 				779F69FF24CD9A6000933692 /* Info.plist */,
@@ -261,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773E3F8A24ECCD2B008C365B /* SetTimeViewController.swift in Sources */,
 				779F69F624CD9A5F00933692 /* ViewController.swift in Sources */,
 				779F69F224CD9A5F00933692 /* AppDelegate.swift in Sources */,
+				773E3F8824ECC65C008C365B /* TestViewController.swift in Sources */,
 				779F69F424CD9A5F00933692 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

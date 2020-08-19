@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         Button_START_Outlet.layer.cornerRadius = 8
         Button_STOP_Outlet.layer.cornerRadius = 8
         Button_RESTART_Outlet.layer.cornerRadius = 8
+        getTimeData2()
+        updateShow()
     }
 
     @IBAction func Button_START_Action(_ sender: UIButton) {
@@ -121,6 +123,7 @@ class ViewController: UIViewController {
             Int_seconds = Int_seconds - 1
             Int_sum = Int_sum + 1
             Int_allTimes = Int_allTimes - 1
+            saveTimeData()
         }
         updateShow()
     }
@@ -200,9 +203,26 @@ class ViewController: UIViewController {
     //저장되어 있는 시간을 불러오는 메소드, 8시간, 50분을 재설정 해주는 메소드
     func getTimeData()
     {
-        Int_seconds = 3000
-        Int_allTimes = 28800
+        Int_seconds = UserDefaults.standard.value(forKey: "second") as? Int ?? 3000
+        Int_allTimes = UserDefaults.standard.value(forKey: "allTime") as? Int ?? 28800
         Int_sum = 0
+    }
+    
+    //위의 getTimeData 메소드는 남은시간, 타이머를 정한 크기,
+    //아리의 getTimeData 메소드는 실시간으로 변경된 시간을 가져오는 메소드
+    func getTimeData2()
+    {
+        Int_seconds = UserDefaults.standard.value(forKey: "second2") as? Int ?? 3000
+        Int_allTimes = UserDefaults.standard.value(forKey: "allTime2") as? Int ?? 28800
+        Int_sum = UserDefaults.standard.value(forKey: "sum2") as? Int ?? 0
+    }
+    
+    //타이머가 1초마다 각 시간을 저장하는 메소드
+    func saveTimeData()
+    {
+        UserDefaults.standard.set(Int_allTimes, forKey: "allTime2")
+        UserDefaults.standard.set(Int_seconds, forKey: "second2")
+        UserDefaults.standard.set(Int_sum, forKey: "sum2")
     }
     
 }
