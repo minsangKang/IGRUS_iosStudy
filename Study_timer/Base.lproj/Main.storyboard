@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HGGGOTHICSSI_PRO_80G.otf">
+            <string>HGGGothicssiP80g</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,16 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-Dd-10D">
-                                <rect key="frame" x="48" y="41" width="279" height="585"/>
+                                <rect key="frame" x="48" y="42" width="279" height="583"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOM-65-hbu">
-                                        <rect key="frame" x="76" y="243" width="127" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <rect key="frame" x="81" y="242" width="117" height="41"/>
+                                        <fontDescription key="fontDescription" name="HGGGothicssiP80g" family="HGGGothicssi_Pro" pointSize="35"/>
                                         <color key="textColor" name="TimerColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byK-oH-OP2">
-                                        <rect key="frame" x="4" y="395" width="271" height="48"/>
+                                        <rect key="frame" x="4" y="393" width="271" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGO-Yc-IU4">
                                                 <rect key="frame" x="4" y="4" width="100" height="40"/>
@@ -78,7 +83,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-eM-c5f" customClass="RoundButton" customModule="Study_timer" customModuleProvider="target">
-                                        <rect key="frame" x="89.5" y="473" width="100" height="40"/>
+                                        <rect key="frame" x="89.5" y="471" width="100" height="40"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="e9q-Eu-Hpc"/>
@@ -152,7 +157,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9t-EZ-GEo">
-                                        <rect key="frame" x="30.5" y="533" width="218" height="48"/>
+                                        <rect key="frame" x="30.5" y="531" width="218" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfs-Qi-5so">
                                                 <rect key="frame" x="4" y="4" width="80" height="40"/>
@@ -199,8 +204,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이머" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-5Q-Bbm">
-                                        <rect key="frame" x="117" y="202" width="45" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="117.5" y="202" width="44.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="HGGGothicssiP80g" family="HGGGothicssi_Pro" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -248,12 +253,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="115"/>
+            <point key="canvasLocation" x="613.60000000000002" y="114.69265367316342"/>
         </scene>
         <!--Set Time View Controller-->
         <scene sceneID="pAR-Q7-CYB">
             <objects>
-                <viewController id="3wL-8c-w3o" customClass="SetTimeViewController" customModule="Study_timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetTimeViewController" id="3wL-8c-w3o" customClass="SetTimeViewController" customModule="Study_timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p7s-aI-arS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ChangeViewController {
+    func updateViewController()
+}
+
 class SetTimeViewController: UIViewController {
     
     
@@ -25,6 +29,8 @@ class SetTimeViewController: UIViewController {
     
     var second: Int = 3000
     var allTime: Int = 28800
+    
+    var setViewControllerDelegate : ChangeViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +103,7 @@ class SetTimeViewController: UIViewController {
         second = H2*3600 + M2*60
         UserDefaults.standard.set(allTime, forKey: "allTime")
         UserDefaults.standard.set(second, forKey: "second")
+        setViewControllerDelegate.updateViewController()
         self.dismiss(animated: true, completion: nil)
     }
     

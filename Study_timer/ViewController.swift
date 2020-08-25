@@ -43,6 +43,13 @@ class ViewController: UIViewController {
     let BUTTON_COLOR = UIColor(named: "ButtonColor")
     let BACKGROUND_COLOR = UIColor(named: "BackgroundColor")
     
+    //타이머가 정지된 상태인지 여부
+    var isStop = true
+    //백그라운드 진입, 종료시에 계산되는 시간차
+    var diffHrs = 0
+    var diffMins = 0
+    var diffSecs = 0
+    
     
     
     //화면에 들어왔을 시 실행되는 메소드
@@ -54,19 +61,13 @@ class ViewController: UIViewController {
         Button_RESTART_Outlet.layer.cornerRadius = 8
         getTimeData2()
         updateShow()
+        NotificationCenter.default.addObserver(self, selector: #selector(pauseWhenBackground(noti:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground(noti:)), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
     @IBAction func Button_START_Action(_ sender: UIButton) {
         //버튼 클릭했을 때 타이머 작동할수 있는 상태일 경우 -> 타이머 작동
-        if(timeTrigger)
-        {
-            checkTimeTrigger()
-            timeTrigger = false
-        }
-        //실행시 배경색을 검은색으로 바꾸겠다
-        startColor()
-        //시작을 누른 경우 시작, 재시작 버튼 비활성화, stop 버튼 활성
-        startEnable()
+        startAction()
     }
     @IBAction func Button_STOP_Action(_ sender: UIButton) {
         endGame()
@@ -74,6 +75,7 @@ class ViewController: UIViewController {
         stopColor()
         //스탑이 된 경우 START 버튼을 클릭할 수 있게 설정하겠다
         stopEnable()
+        isStop = true
     }
     @IBAction func Button_RESTART_Action(_ sender: UIButton) {
         Int_seconds = 3000
@@ -82,6 +84,7 @@ class ViewController: UIViewController {
         stopEnable()
         Button_RESTART_Outlet.backgroundColor = BUTTON_CLICK
         Button_RESTART_Outlet.isUserInteractionEnabled = false
+        isStop = true
     }
     @IBAction func Button_RESET_Action(_ sender: UIButton) {
         getTimeData()
@@ -90,9 +93,12 @@ class ViewController: UIViewController {
         stopEnable()
         Button_RESTART_Outlet.backgroundColor = BUTTON_CLICK
         Button_RESTART_Outlet.isUserInteractionEnabled = false
+        isStop = true
     }
     @IBAction func Button_TimeSET_Action(_ sender: UIButton) {
-        Label_Timer.text = "시간 설정!"
+        let setVC = storyboard?.instantiateViewController(withIdentifier: "SetTimeViewController") as! SetTimeViewController
+        setVC.setViewControllerDelegate = self
+        present(setVC,animated: true,completion: nil)
     }
     
     //타이머 작동 메소드, 실행시 1초마다 updateCounter가 실행된다
@@ -225,5 +231,97 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(Int_sum, forKey: "sum2")
     }
     
+    @objc func pauseWhenBackground(noti: Notification) {
+        print("background")
+        print("현재 sum값 : " + String(Int_sum))
+        if(!isStop)
+        {
+            realTime.invalidate()
+            timeTrigger = true
+            let shared = UserDefaults.standard
+            //현재 시간을 sacedTime 이라는 키값으로 저장하겠다
+            shared.set(Date(), forKey: "savedTime")
+        }
+
+    }
+    @objc func willEnterForeground(noti: Notification) {
+        print("Enter")
+        if(!isStop)
+        {
+            if let savedDate = UserDefaults.standard.object(forKey: "savedTime") as? Date {
+                (diffHrs, diffMins, diffSecs) = ViewController.getTimeDifference(startDate: savedDate)
+                refresh(hours: diffHrs, mins: diffMins, secs: diffSecs)
+                removeSavedDate()
+            }
+        }
+        print("되돌아온 후 sum값 : " + String(Int_sum))
+    }
+    static func getTimeDifference(startDate: Date) -> (Int, Int, Int) {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.hour, .minute, .second], from: startDate, to: Date())
+        return(components.hour!, components.minute!, components.second!)
+    }
+    func refresh (hours: Int, mins: Int, secs: Int) {
+        let tempSeconds = hours*3600 + mins*60 + secs
+        if(Int_seconds - tempSeconds < 0)
+        {
+            Int_allTimes = Int_allTimes - Int_seconds
+            Int_sum = Int_sum + Int_seconds
+            Int_seconds = 0
+        }
+        else if(Int_allTimes - tempSeconds < 0)
+        {
+            Int_allTimes = 0
+            Int_sum = Int_sum + Int_allTimes
+            Int_seconds = Int_seconds - Int_allTimes
+        }
+        else
+        {
+            Int_allTimes = Int_allTimes - tempSeconds
+            Int_sum = Int_sum + tempSeconds
+            Int_seconds = Int_seconds - tempSeconds
+        }
+        startAction()
+    }
+    func removeSavedDate() {
+        if (UserDefaults.standard.object(forKey: "savedTime") as? Date) != nil {
+            UserDefaults.standard.removeObject(forKey: "savedTime")
+        }
+    }
+    
+    func startAction()
+    {
+        //타이머 작동을 위한 메소드
+        if(timeTrigger)
+        {
+            checkTimeTrigger()
+            timeTrigger = false
+        }
+        //실행시 배경색을 검은색으로 바꾸겠다
+        startColor()
+        //시작을 누른 경우 시작, 재시작 버튼 비활성화, stop 버튼 활성
+        startEnable()
+        isStop = false
+    }
+
+
+    
+    
+}
+//end ViewController
+
+extension ViewController : ChangeViewController {
+
+    func updateViewController() {
+        getTimeData()
+        updateShow()
+        stopColor()
+        stopEnable()
+        Button_RESTART_Outlet.backgroundColor = BUTTON_CLICK
+        Button_RESTART_Outlet.isUserInteractionEnabled = false
+        saveTimeData()
+    }
 }
 
+//해결방법 !
+// -> 어플 종료시 라는 메소드, 그 메소드에 저희가 구현한 백그라운드 메소드를 그대로 다시 실행
