@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		773E3F8824ECC65C008C365B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E3F8724ECC65C008C365B /* TestViewController.swift */; };
 		773E3F8A24ECCD2B008C365B /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E3F8924ECCD2B008C365B /* SetTimeViewController.swift */; };
-		7740EE1324F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_40G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7740EE0D24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_40G.otf */; };
-		7740EE1424F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_00G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7740EE0E24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_00G.otf */; };
-		7740EE1524F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_60G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7740EE0F24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_60G.otf */; };
-		7740EE1624F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_99G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7740EE1024F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_99G.otf */; };
-		7740EE1724F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_20G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7740EE1124F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_20G.otf */; };
-		7740EE1824F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_80G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7740EE1224F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_80G.otf */; };
 		779F69F224CD9A5F00933692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F69F124CD9A5F00933692 /* AppDelegate.swift */; };
 		779F69F424CD9A5F00933692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F69F324CD9A5F00933692 /* SceneDelegate.swift */; };
 		779F69F624CD9A5F00933692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F69F524CD9A5F00933692 /* ViewController.swift */; };
@@ -23,6 +17,12 @@
 		779F69FE24CD9A6000933692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779F69FC24CD9A6000933692 /* LaunchScreen.storyboard */; };
 		779F6A0924CD9A6000933692 /* Study_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F6A0824CD9A6000933692 /* Study_timerTests.swift */; };
 		779F6A1424CD9A6000933692 /* Study_timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F6A1324CD9A6000933692 /* Study_timerUITests.swift */; };
+		877779B726026ECF0057D6DA /* HGGGOTHICSSI_PRO_40G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 877779B126026ECC0057D6DA /* HGGGOTHICSSI_PRO_40G.otf */; };
+		877779B826026ECF0057D6DA /* HGGGOTHICSSI_PRO_20G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 877779B226026ECD0057D6DA /* HGGGOTHICSSI_PRO_20G.otf */; };
+		877779B926026ECF0057D6DA /* HGGGOTHICSSI_PRO_60G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 877779B326026ECD0057D6DA /* HGGGOTHICSSI_PRO_60G.otf */; };
+		877779BA26026ECF0057D6DA /* HGGGOTHICSSI_PRO_99G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 877779B426026ECE0057D6DA /* HGGGOTHICSSI_PRO_99G.otf */; };
+		877779BB26026ECF0057D6DA /* HGGGOTHICSSI_PRO_00G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 877779B526026ECE0057D6DA /* HGGGOTHICSSI_PRO_00G.otf */; };
+		877779BC26026ECF0057D6DA /* HGGGOTHICSSI_PRO_80G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 877779B626026ECF0057D6DA /* HGGGOTHICSSI_PRO_80G.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +45,6 @@
 /* Begin PBXFileReference section */
 		773E3F8724ECC65C008C365B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		773E3F8924ECCD2B008C365B /* SetTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
-		7740EE0D24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_40G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HGGGOTHICSSI_PRO_40G.otf; path = fonts/HGGGOTHICSSI_PRO_40G.otf; sourceTree = SOURCE_ROOT; };
-		7740EE0E24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_00G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HGGGOTHICSSI_PRO_00G.otf; path = fonts/HGGGOTHICSSI_PRO_00G.otf; sourceTree = SOURCE_ROOT; };
-		7740EE0F24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_60G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HGGGOTHICSSI_PRO_60G.otf; path = fonts/HGGGOTHICSSI_PRO_60G.otf; sourceTree = SOURCE_ROOT; };
-		7740EE1024F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_99G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HGGGOTHICSSI_PRO_99G.otf; path = fonts/HGGGOTHICSSI_PRO_99G.otf; sourceTree = SOURCE_ROOT; };
-		7740EE1124F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_20G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HGGGOTHICSSI_PRO_20G.otf; path = fonts/HGGGOTHICSSI_PRO_20G.otf; sourceTree = SOURCE_ROOT; };
-		7740EE1224F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_80G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HGGGOTHICSSI_PRO_80G.otf; path = fonts/HGGGOTHICSSI_PRO_80G.otf; sourceTree = SOURCE_ROOT; };
 		779F69EE24CD9A5F00933692 /* Study_timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F69F124CD9A5F00933692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F69F324CD9A5F00933692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +60,12 @@
 		779F6A1324CD9A6000933692 /* Study_timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_timerUITests.swift; sourceTree = "<group>"; };
 		779F6A1524CD9A6000933692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779F6A2124CD9A8600933692 /* Study_timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Study_timer.entitlements; sourceTree = "<group>"; };
+		877779B126026ECC0057D6DA /* HGGGOTHICSSI_PRO_40G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGGGOTHICSSI_PRO_40G.otf; sourceTree = "<group>"; };
+		877779B226026ECD0057D6DA /* HGGGOTHICSSI_PRO_20G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGGGOTHICSSI_PRO_20G.otf; sourceTree = "<group>"; };
+		877779B326026ECD0057D6DA /* HGGGOTHICSSI_PRO_60G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGGGOTHICSSI_PRO_60G.otf; sourceTree = "<group>"; };
+		877779B426026ECE0057D6DA /* HGGGOTHICSSI_PRO_99G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGGGOTHICSSI_PRO_99G.otf; sourceTree = "<group>"; };
+		877779B526026ECE0057D6DA /* HGGGOTHICSSI_PRO_00G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGGGOTHICSSI_PRO_00G.otf; sourceTree = "<group>"; };
+		877779B626026ECF0057D6DA /* HGGGOTHICSSI_PRO_80G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGGGOTHICSSI_PRO_80G.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,19 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7740EE0C24F4E00B00D1E8F0 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				7740EE0E24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_00G.otf */,
-				7740EE1124F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_20G.otf */,
-				7740EE0D24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_40G.otf */,
-				7740EE0F24F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_60G.otf */,
-				7740EE1224F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_80G.otf */,
-				7740EE1024F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_99G.otf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
 		779F69E524CD9A5F00933692 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +116,7 @@
 		779F69F024CD9A5F00933692 /* Study_timer */ = {
 			isa = PBXGroup;
 			children = (
-				7740EE0C24F4E00B00D1E8F0 /* fonts */,
+				877779B026026EB60057D6DA /* fonts */,
 				779F6A2124CD9A8600933692 /* Study_timer.entitlements */,
 				779F69F124CD9A5F00933692 /* AppDelegate.swift */,
 				779F69F324CD9A5F00933692 /* SceneDelegate.swift */,
@@ -160,6 +147,19 @@
 				779F6A1524CD9A6000933692 /* Info.plist */,
 			);
 			path = Study_timerUITests;
+			sourceTree = "<group>";
+		};
+		877779B026026EB60057D6DA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				877779B526026ECE0057D6DA /* HGGGOTHICSSI_PRO_00G.otf */,
+				877779B226026ECD0057D6DA /* HGGGOTHICSSI_PRO_20G.otf */,
+				877779B126026ECC0057D6DA /* HGGGOTHICSSI_PRO_40G.otf */,
+				877779B326026ECD0057D6DA /* HGGGOTHICSSI_PRO_60G.otf */,
+				877779B626026ECF0057D6DA /* HGGGOTHICSSI_PRO_80G.otf */,
+				877779B426026ECE0057D6DA /* HGGGOTHICSSI_PRO_99G.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,14 +266,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7740EE1424F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_00G.otf in Resources */,
-				7740EE1324F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_40G.otf in Resources */,
-				7740EE1824F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_80G.otf in Resources */,
-				7740EE1724F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_20G.otf in Resources */,
-				7740EE1624F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_99G.otf in Resources */,
+				877779BB26026ECF0057D6DA /* HGGGOTHICSSI_PRO_00G.otf in Resources */,
+				877779B726026ECF0057D6DA /* HGGGOTHICSSI_PRO_40G.otf in Resources */,
+				877779BC26026ECF0057D6DA /* HGGGOTHICSSI_PRO_80G.otf in Resources */,
 				779F69FE24CD9A6000933692 /* LaunchScreen.storyboard in Resources */,
+				877779BA26026ECF0057D6DA /* HGGGOTHICSSI_PRO_99G.otf in Resources */,
+				877779B826026ECF0057D6DA /* HGGGOTHICSSI_PRO_20G.otf in Resources */,
 				779F69FB24CD9A6000933692 /* Assets.xcassets in Resources */,
-				7740EE1524F4E02100D1E8F0 /* HGGGOTHICSSI_PRO_60G.otf in Resources */,
+				877779B926026ECF0057D6DA /* HGGGOTHICSSI_PRO_60G.otf in Resources */,
 				779F69F924CD9A5F00933692 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
